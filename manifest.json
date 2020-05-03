@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "Email Helper",
+    "version": "1.0",
+    "description": "E-mail Helper for Blind",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mail.google.com/mail/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "bg.js"
+        ]
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
