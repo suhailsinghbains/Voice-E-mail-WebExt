@@ -70,7 +70,7 @@ function Option1_ComposeAnEmail() {
     })
 }
 
-function Option2_CheckYourInboxOrSent() {
+function Option2_CheckYourInbox() {
     showAndSpeak("Opening Inbox").then(() => {
         let arr = document.getElementsByTagName('tbody')[5];
         let noOfEmails = 1
@@ -189,7 +189,7 @@ function Option2_CheckYourInboxOrSent() {
 function Option3_GoToSentEmail() {
     document.getElementsByClassName('aio UKr6le')[4].click()
     setTimeout(function () {
-        let arr = document.getElementsByTagName('tbody')[7];
+        let arr = document.getElementsByTagName('tbody')[8];
         let noOfEmails = 1
         for (let i = 0; i < noOfEmails; i++) {
             let j = i + 1;
